@@ -1,0 +1,15 @@
+
+  <div class="container">
+    <table>
+      <tr>
+        <th>USERID</th>
+        <th>ID</th>
+        <th>TITLE</th>
+        </tr>
+        <tr *ngFor="let lst of data" class="custom">
+          <td>{{lst.userId}}</td>
+        <td >{{lst.id}}</td>
+        <td class="title">{{lst.title}}</td>
+      </tr>
+    </table>
+  </div>

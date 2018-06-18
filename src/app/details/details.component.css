@@ -1,0 +1,26 @@
+table,th,td{
+    border:1px solid black;
+border-collapse:collapse;
+padding:20px;
+}
+table{
+    width:70%
+}
+.custom{
+text-align:center;
+}
+th{
+    color:green;
+    font-size:25px;
+}
+td{
+    font-size:22px;
+}
+.title{
+    color:red;
+}
+table{
+    margin-left:200px;
+    margin-top:50px;
+    border:10px solid green;
+}
