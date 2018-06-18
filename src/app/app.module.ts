@@ -7,10 +7,14 @@ import { HomeComponent } from './home/home.component';
 import {RouterModule,Routes,Router } from '@angular/router';
 import {AppService } from './app.service';
 import { DetailsComponent } from './details/details.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes:Routes=[
   {path:'',component:HomeComponent},
-  {path:"details",component:DetailsComponent}
+  {path:"details",component:DetailsComponent},
+  {path:"forgot",component:ForgotpasswordComponent},
+  {path:"signup",component:SignupComponent}
 
 ]
 
@@ -19,6 +23,8 @@ const routes:Routes=[
     AppComponent,
     HomeComponent,
     DetailsComponent,
+    ForgotpasswordComponent,
+    SignupComponent,
     
   ],
   imports: [

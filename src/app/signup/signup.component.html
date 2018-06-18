@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-5 new">
+     <h1> Create New Account</h1>
+    
+    <div class="form-group">
+      <label>Email</label>
+      <input type="text" class="form-control" #email="ngModel" name="email" ngModel>
+    </div>
+    <div class="form-group">
+      <label>Mobile No</label>
+      <input type="text" class="form-control" #number="ngModel" name="number" ngModel>
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="text" class="form-control" #password="ngModel" name="password" ngModel>
+    </div>
+    <div class="form-group">
+      <label>Re Enter Password</label>
+      <input type="text" class="form-control" #repassword="ngModel" name="password" ngModel>
+    </div>
+    <button class="btn btn-success">Submit</button>
+    <div class="col-lg-7 back">
+      <p (click)="back()"> Back To Login</p>
+     </div>
+  </div>
+</div>
+</div>

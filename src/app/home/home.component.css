@@ -14,7 +14,7 @@ margin-top:100px;
     border-radius:4px;
  border-width:2s0px;
    padding:15px; 
-   padding-bottom:25px;
+   padding-bottom:5px;
    
 }
 
@@ -25,4 +25,7 @@ h1{
 }
 button{ 
     width:100%
+}
+.forgot,.signup{
+    padding-top:20px;
 }

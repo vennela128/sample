@@ -19,5 +19,10 @@ data:any={}
 this.router.navigate(['details'])
 
   }
-
+  forgot(){
+    this.router.navigate(['forgot'])
+    }
+signup(){
+  this.router.navigate(['signup'])
+}
 }

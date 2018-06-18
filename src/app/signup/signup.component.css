@@ -1,0 +1,14 @@
+.new{
+    border:10px solid green;
+    margin-left:300px;
+    margin-top:50px;
+    padding:25px;
+
+}
+button{
+    width:100%;
+}
+.back{
+    margin-left:250px;
+    margin-top:15px;
+}

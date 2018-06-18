@@ -23,4 +23,27 @@ table{
     margin-left:200px;
     margin-top:50px;
     border:10px solid green;
+    margin-bottom:50px;
 }
+.header,.footer{
+    color:white;
+    background-color:green;
+    height:75px;
+    text-align:center;
+    padding:10px;
+}
+.titler{
+    text-align:center;
+    padding:10px;
+    padding-left:100px;  
+}
+.logout{
+    color:white;
+    padding:25px;
+    padding-left:100px;
+}
+.footer h5{
+    padding:10px;
+}
+
+   
