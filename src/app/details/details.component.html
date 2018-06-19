@@ -10,19 +10,36 @@
   </div>
 
 
-  <div class="container">
-    <table>
-      <tr>
-        <th>USERID</th>
-        <th>ID</th>
-        <th>TITLE</th>
-        </tr>
-        <tr *ngFor="let lst of data" class="custom">
-          <td>{{lst.userId}}</td>
-        <td >{{lst.id}}</td>
-        <td class="title">{{lst.title}}</td>
-      </tr>
-    </table>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 ">
+        <div class="list-group sss">
+        <a href="#" class="list-group-item">Home</a>
+        <a href="#" class="list-group-item">Sign In</a>
+        <a href="#" class="list-group-item">Contact Us</a>
+        <a href="#" class="list-group-item">About Us</a>
+        </div>
+      </div>
+     <div class="co-lg-10">
+        <table>
+            <tr>
+              <th>USERID</th>
+              <th>ID</th>
+              <th>TITLE</th>
+              </tr>
+              <tr *ngFor="let lst of data" class="custom">
+                <td>{{lst.userId}}</td>
+              <td >{{lst.id}}</td>
+              <td class="title">{{lst.title}}</td>
+            </tr>
+          </table>
+      </div>
+     </div>
+          
+     
+ 
+
+   
   </div>
   <div class="container-fluid footer">
    <h5> Footer </h5>

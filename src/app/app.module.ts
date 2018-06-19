@@ -9,6 +9,7 @@ import {AppService } from './app.service';
 import { DetailsComponent } from './details/details.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { SignupComponent } from './signup/signup.component';
+import {ReactiveFormsModule } from '@angular/forms';
 
 const routes:Routes=[
   {path:'',component:HomeComponent},
@@ -31,7 +32,8 @@ const routes:Routes=[
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(routes),
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [AppService],
   bootstrap: [AppComponent]

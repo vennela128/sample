@@ -21,10 +21,11 @@ td{
     color:red;
 }
 table{
-    margin-left:200px;
-    margin-top:50px;
+    margin-left:250px;
+    margin-top:100px;
     border:10px solid green;
-    margin-bottom:50px;
+    margin-bottom:100px;
+   
 }
 .header,.footer{
     color:white;
@@ -36,7 +37,7 @@ table{
 .titler{
     text-align:center;
     padding:10px;
-    padding-left:100px;  
+    padding-left:300px;  
 }
 .logout{
     color:white;
@@ -44,7 +45,38 @@ table{
     padding-left:100px;
 }
 .footer h5{
-    padding:10px;
-}
+    padding:5px;
 
+}
+ .footer{
+    position:fixed;
+    bottom:0px;
+    height:50px;
+}
+ .header{
+    position:fixed;
+    top:0px;
+    right:0px;
+    left:0px;
+}
+.list-group{
+    position:fixed;
+    top:75px;
+    left:0px;
+    
+    border-color:green;
+   
+}
+.list-group a{
+    padding:25px;
+    color:white;
+    font-weight:bold;
+    background-color:green;
+    
+    
+}
+.sss{
+    background-color:green;
+    height:700px;
+}
    
