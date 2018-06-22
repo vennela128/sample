@@ -1,0 +1,25 @@
+.side-nav{
+    margin-left:-15px;
+   
+    padding:10px;
+    background-color:green;
+    width:150px;
+    height:1000px;
+}
+   .nav{
+
+  position:fixed;
+    left:0px;
+    top:75px;
+    
+}
+.side-nav li{
+   
+    margin-bottom:4px;
+
+   
+}
+.side-nav li a{
+    color:white;
+    margin-left:0px;
+}

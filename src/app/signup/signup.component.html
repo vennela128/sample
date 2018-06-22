@@ -1,53 +1,60 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-5 new">
-     <h1> Create New Account</h1>
-    <form [formGroup]="userform">
-            <div class="form-group">
-        
-            <label>Name</label>
-            <input type="text" class="form-control" #name formControlName="name" >
-            <div *ngIf="userform.controls['name'].hasError('required') && (userform.controls['name'].touched || userform.controls['name'].dirty)" class="alert alert-danger">
-              Please Enter Name
-            </div>
-            <div *ngIf="userform.controls['name'].hasError('minlength') && (userform.controls['name'].touched || userform.controls['name'].dirty)" class="alert alert-danger">
-                name should sot exceed more than 5 characters
-              </div>
+      <h1> Create New Account</h1>
+      <form [formGroup]="userform">
+        <div class="form-group">
+
+          <label>Name</label>
+          <input type="text" class="form-control" #name formControlName="name">
+          <div *ngIf="userform.controls['name'].hasError('required') && (userform.controls['name'].touched || userform.controls['name'].dirty)"
+            class="alert alert-danger">
+            Please Enter Name
           </div>
-          <div class="form-group">
-      <label>Email</label>
-      <input type="text" class="form-control" #email formControlName="email" >
-      <div *ngIf="userform.controls['email'].hasError('required') && (userform.controls['email'].touched || userform.controls['email'].dirty)" class="alert alert-danger">
-          Please Enter Email
+          <div *ngIf="userform.controls['name'].hasError('minlength') && (userform.controls['name'].touched || userform.controls['name'].dirty)"
+            class="alert alert-danger">
+            name should sot exceed more than 5 characters
+          </div>
         </div>
-    </div>
-    
-    <div class="form-group">
-      <label>Password</label>
-      <input type="text" class="form-control" #password formControlName="password">
-      <div *ngIf="userform.controls['password'].hasError('required') && (userform.controls['password'].touched || userform.controls['password'].dirty)" class="alert alert-danger">
-          Please Enter Password
+        <div class="form-group">
+          <label>Email</label>
+          <input type="text" class="form-control" #email formControlName="email">
+          <div *ngIf="userform.controls['email'].hasError('required') && (userform.controls['email'].touched || userform.controls['email'].dirty)"
+            class="alert alert-danger">
+            Please Enter Email
+          </div>
         </div>
-        <div *ngIf="userform.controls['password'].hasError('maxlength') && (userform.controls['password'].touched || userform.controls['password'].dirty)" class="alert alert-danger">
+
+        <div class="form-group">
+          <label>Password</label>
+          <input type="text" class="form-control" #password formControlName="password">
+          <div *ngIf="userform.controls['password'].hasError('required') && (userform.controls['password'].touched || userform.controls['password'].dirty)"
+            class="alert alert-danger">
+            Please Enter Password
+          </div>
+          <div *ngIf="userform.controls['password'].hasError('maxlength') && (userform.controls['password'].touched || userform.controls['password'].dirty)"
+            class="alert alert-danger">
             name must be less than 10 characters
           </div>
-          <div *ngIf="userform.controls['password'].hasError('minlength') && (userform.controls['password'].touched || userform.controls['password'].dirty)" class="alert alert-danger">
-              name must be greater than 5 characters
-            </div>
-        
-    </div>
-    <div class="form-group">
-      <label>Re Enter Password</label>
-      <input type="text" class="form-control" #repasswordl formControlName="repassword">
-      <div *ngIf="userform.controls['repassword'].hasError('required') && (userform.controls['repassword'].touched || userform.controls['repassword'].dirty)" class="alert alert-danger">
-          Please Re-enter Password
+          <div *ngIf="userform.controls['password'].hasError('minlength') && (userform.controls['password'].touched || userform.controls['password'].dirty)"
+            class="alert alert-danger">
+            name must be greater than 5 characters
+          </div>
+
         </div>
+        <div class="form-group">
+          <label>Re Enter Password</label>
+          <input type="text" class="form-control" #repasswordl formControlName="repassword">
+          <div *ngIf="userform.controls['repassword'].hasError('required') && (userform.controls['repassword'].touched || userform.controls['repassword'].dirty)"
+            class="alert alert-danger">
+            Please Re-enter Password
+          </div>
+        </div>
+        <button [disabled]="userform.invalid" class="btn btn-success">Submit</button>
+      </form>
+      <div class="col-lg-7 back">
+        <p (click)="back()"> Back To Login</p>
+      </div>
     </div>
-    <button [disabled]="userform.invalid" class="btn btn-success">Submit</button>
-  </form>
-    <div class="col-lg-7 back">
-      <p (click)="back()"> Back To Login</p>
-     </div>
   </div>
-</div>
 </div>
